@@ -86,8 +86,10 @@ nav ul li a:active {
 }
 #hero-btn {
   display: flex;
+  column-gap: 1rem;
 }
 .blue-btn {
+  font-weight: 500;
   background-color: hsl(231, 69%, 60%);
   color: #ffffff;
   padding: 0.5rem 0.9rem;
@@ -104,12 +106,13 @@ nav ul li a:active {
 }
 
 .white-btn {
+  font-weight: 500;
   border: none;
   padding: 0.5rem 0.9rem;
   background-color: hsl(233, 21%, 93%);
   border-radius: 5px;
-  box-shadow: 4.8px 8.3px 6.3px rgba(0, 0, 0, 0.11),
-    38px 66px 50px rgba(0, 0, 0, 0.055);
+  box-shadow: 4.8px 8.3px 6.3px rgba(163, 161, 161, 0.11),
+    38px 66px 50px rgba(100, 97, 97, 0.055);
 }
 .white-btn:active {
   background-color: #ffffff;
@@ -365,9 +368,9 @@ footer {
   color: hsl(231, 12%, 77%);
 }
 .flex2-footer {
-  align-items: center;
   margin-right: 1.5rem;
   display: flex;
+  align-items: center;
   column-gap: 2rem;
 }
 
@@ -404,11 +407,29 @@ footer {
   .card-2 {
     margin: 0px;
   }
+  .slider {
+    margin-top: 0px;
+  }
   .flex-slider {
     flex-direction: column;
+    row-gap: 4rem;
+  }
+  .flex-slider :nth-child(2) {
+    text-align: center;
+    /* justify-content: center; */
+  }
+  .flex-slider :nth-child(2) h2 {
+    font-size: 1.5rem;
+  }
+  .flex-slider :nth-child(2) p {
+    font-size: 0.9rem;
+  }
+  .section-3 {
+    margin-top: 1.5rem;
   }
   .flex-download {
     flex-direction: column;
+    align-items: center;
     row-gap: 3rem;
   }
   .download-section {
@@ -435,6 +456,68 @@ footer {
   }
   .input-email {
     flex-direction: column;
+    row-gap: 1.1rem;
+  }
+  .input-email input {
+    width: 100%;
+  }
+  .footer-section {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  .flex1-footer {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.8rem;
+  }
+  .flex1-footer :nth-child(2) {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .flex2-footer {
+    margin: 0px;
+  }
+  .feature p {
+    width: 100%;
+    padding: 0px;
+    font-size: 0.9rem;
+  }
+
+  .flex-box :nth-child(2) {
+    order: -1;
+  }
+  .section-1 {
+    margin-top: 1rem;
+  }
+  .flex-box > div:first-child {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .flex-box > div > h1 {
+    font-size: 2rem;
+  }
+  .flex-box > div > p {
+    font-size: 1rem;
+  }
+  #hero-btn {
+    justify-content: center;
+    /* column-gap: 1rem; */
+  }
+  .blue-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.7rem;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+  }
+  .white-btn {
+    order: 2;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+    display: inline-block;
+    border: none;
+    /* margin-right: 0.65rem; */
   }
 }
 /* responsive  */
