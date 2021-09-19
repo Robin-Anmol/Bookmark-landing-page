@@ -402,10 +402,11 @@ footer {
   .login-button:active {
     /* background: #ffffff; */
     color: hsl(0, 94%, 66%);
+    border: none;
     /* padding: 0.4rem 1.3rem; */
     /* border: 2px solid hsl(0, 94%, 66%); */
   }
-  .login-button:active {
+  .login-button a:active {
     color: hsl(0, 94%, 66%) !important;
   }
   .new-link {
