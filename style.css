@@ -407,6 +407,7 @@ footer {
     /* border: 2px solid hsl(0, 94%, 66%); */
   }
   .login-button a:active {
+    border: none;
     color: hsl(0, 94%, 66%) !important;
   }
   .new-link {
